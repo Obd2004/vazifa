@@ -1,0 +1,63 @@
+.header{
+    background: #1F1D2B;
+    height: 100vh;
+}
+.header__logo{
+    padding: 24px;
+    display: block;
+}
+.header__list{
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 12px;
+}
+.header__list-item{
+    border-radius: 12px 0px 0px 12px;
+    padding: 12px;
+
+}
+.header__list-item{
+    padding: 12px;
+    display: block;
+}
+.header__list-item a{
+    width: 100%;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EA7C69;
+    border-radius: 8px;
+}
+.header__logOut{
+    padding: 24px;
+    display: block;
+    background-color: transparent;
+    margin: 0 auto;
+    border: none;
+    color: #EA7C69;
+}
+.active{
+    background-color: #252836;
+    position: relative;
+    a{
+        background-color: #EA7C69;
+        color: #fff;
+    }
+    &::before{
+        content: url(../../assets/images/arrow.png); 
+        position: absolute;
+        right: 0px;
+        top: -16.5px;
+    }
+    &::after{
+        content: url(../../assets/images/arrow.png);
+        position: absolute;
+        right: 0px;
+        bottom: -16.5px;
+        transform: rotate(-90deg);
+
+    }
+}
